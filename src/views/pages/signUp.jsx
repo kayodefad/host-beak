@@ -24,7 +24,10 @@ const SignUp = () => {
 				</p>
 			</div>
 			<div className='p-8 flex-1'>
-				<form className='flex flex-col h-full'>
+				<form
+					onSubmit={(e) => e.preventDefault()}
+					className='flex flex-col h-full'
+				>
 					<div>
 						<h2 className='text-mezechBlue text-3xl font-bold mb-1'>
 							Create Account

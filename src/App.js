@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import DefaultLayout from './layout/DefaultLayout';
 import AddBill from './views/pages/addBill';
-import Bills from './views/pages/bills';
 import Page404 from './views/pages/Page404';
 import SignUp from './views/pages/signUp';
 import ViewReports from './views/pages/viewReports';
@@ -21,7 +20,7 @@ const App = () => {
 					<Route path='analytics/view-reports' element={<ViewReports />} />
 					<Route path='purchases/bills' element={<AddBill />} />
 				</Route>
-				<Route path='/sign-up' element={<SignUp />} />
+				<Route path='sign-up' element={<SignUp />} />
 				<Route path='*' element={<Page404 />} />
 			</Routes>
 		</Router>
