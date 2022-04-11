@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import showcase from '../../assets/images/showcase.svg';
+import showcase from '../../assets/images/showcase.png';
 
 const SignUp = () => {
 	const navigate = useNavigate();
