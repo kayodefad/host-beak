@@ -2,8 +2,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import preloader from './assets/images/preloader.gif';
 import DefaultLayout from './layout/DefaultLayout';
 import AddBill from './views/pages/add-bill';
+import Bills from './views/pages/bills';
 import SignUp from './views/pages/sign-up';
 import ViewReports from './views/pages/view-reports';
+import Welcome from './views/pages/welcome';
 
 const preloaderStyle = {
 	display: 'flex',
@@ -21,7 +23,9 @@ const App = () => {
 				<Route path='/' element={<DefaultLayout />}>
 					<Route index element={<AddBill />} />
 					<Route path='add-bill' element={<AddBill />} />
-					<Route path='view-reports' element={<ViewReports />} />
+					<Route path='analytics/view-reports' element={<ViewReports />} />
+					<Route path='welcome' element={<Welcome />} />
+					<Route path='purchases/bills' element={<Bills />} />
 				</Route>
 				<Route path='/sign-up' element={<SignUp />} />
 			</Routes>

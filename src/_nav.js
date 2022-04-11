@@ -17,7 +17,7 @@ const _nav = [
 		name: 'Welcome',
 		path: '/welcome',
 		icon: (
-			<img className='w-full h-full' src={welcomeIcon} alt='welcome icon' />
+			<img className='w-[40%] h-[40%]' src={welcomeIcon} alt='welcome icon' />
 		),
 	},
 	{
@@ -25,21 +25,25 @@ const _nav = [
 		name: 'Dashboard',
 		path: '/dashboard',
 		icon: (
-			<img className='w-full h-full' src={dashboardIcon} alt='dashboard icon' />
+			<img
+				className='w-[40%] h-[40%]'
+				src={dashboardIcon}
+				alt='dashboard icon'
+			/>
 		),
 	},
 	{
 		component: NavLink,
 		name: 'Sales',
 		path: '/sales',
-		icon: <img className='w-full h-full' src={salesIcon} alt='sales icon' />,
+		icon: <img className='w-[40%] h-[40%]' src={salesIcon} alt='sales icon' />,
 	},
 	{
 		component: NavLink,
 		name: 'Purchases',
 		path: '/purchases',
 		icon: (
-			<img className='w-full h-full' src={purchaseIcon} alt='purchase icon' />
+			<img className='w-[40%] h-[40%]' src={purchaseIcon} alt='purchase icon' />
 		),
 		items: [
 			{
@@ -65,7 +69,7 @@ const _nav = [
 		path: '/accounting',
 		icon: (
 			<img
-				className='w-full h-full'
+				className='w-[40%] h-[40%]'
 				src={accountingIcon}
 				alt='accounting icon'
 			/>
@@ -83,7 +87,7 @@ const _nav = [
 		name: 'Banking',
 		path: '/banking',
 		icon: (
-			<img className='w-full h-full' src={bankingIcon} alt='banking icon' />
+			<img className='w-[40%] h-[40%]' src={bankingIcon} alt='banking icon' />
 		),
 		items: [
 			{
@@ -98,7 +102,7 @@ const _nav = [
 		name: 'Payroll',
 		path: '/payroll',
 		icon: (
-			<img className='w-full h-full' src={payrollIcon} alt='payroll icon' />
+			<img className='w-[40%] h-[40%]' src={payrollIcon} alt='payroll icon' />
 		),
 		items: [
 			{
@@ -113,7 +117,7 @@ const _nav = [
 		name: 'Reports',
 		path: '/reports',
 		icon: (
-			<img className='w-full h-full' src={reportsIcon} alt='reports icon' />
+			<img className='w-[40%] h-[40%]' src={reportsIcon} alt='reports icon' />
 		),
 	},
 	{
@@ -121,13 +125,17 @@ const _nav = [
 		name: 'Analytics',
 		path: '/analytics',
 		icon: (
-			<img className='w-full h-full' src={analyticsIcon} alt='analytics icon' />
+			<img
+				className='w-[40%] h-[40%]'
+				src={analyticsIcon}
+				alt='analytics icon'
+			/>
 		),
 		items: [
 			{
 				component: NavLink,
 				name: 'View Report',
-				path: '/analytics/view-report',
+				path: '/analytics/view-reports',
 			},
 			{
 				component: NavLink,
@@ -171,7 +179,7 @@ const _nav = [
 		name: 'Settings',
 		path: '/settings',
 		icon: (
-			<img className='w-full h-full' src={settingsIcon} alt='settings icon' />
+			<img className='w-[40%] h-[40%]' src={settingsIcon} alt='settings icon' />
 		),
 	},
 ];

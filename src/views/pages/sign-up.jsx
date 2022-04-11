@@ -6,7 +6,7 @@ const SignUp = () => {
 	const labelStyle = 'text-[#82869A]';
 
 	return (
-		<div className='flex md:h-screen overflow-hidden'>
+		<div className='flex h-screen overflow-auto bg-white'>
 			<div className='w-1/2 relative hidden lg:flex justify-center'>
 				<img
 					className='w-full h-full object-cover'

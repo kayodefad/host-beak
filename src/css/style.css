@@ -1,7 +1,46 @@
 .nav-link {
 	display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	margin: auto;
+	width: 100%;
+	color: #bfbfbf;
+	transition: color 0.3s ease-in;
+}
+
+.nav-sub-link {
+	color: #8c8c8c;
+}
+
+.nav-icon {
+	background: none;
+	transition: background 0.3s ease-in;
+}
+
+.nav-link.activated,
+.nav-link:hover {
+	color: #000;
+}
+
+.nav-link.activated .nav-icon,
+.nav-link:hover .nav-icon {
+	background: #081494;
+}
+
+.sub-link {
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.5s ease-in;
+}
+
+.sub-link.show {
+	max-height: 2000px;
+}
+
+.arrow {
+	transition: transform 0.3s ease-in;
+}
+
+.arrow.active {
+	transform: rotate(90deg);
 }
