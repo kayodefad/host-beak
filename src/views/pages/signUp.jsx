@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router-dom';
 import showcase from '../../assets/images/showcase.svg';
 
 const SignUp = () => {
+	const navigate = useNavigate();
+
 	const inputStyle =
 		'border-transparent border-b-[3px] w-full border-b-[#EBEBEB] focus:border-transparent focus:border-b-[#EBEBEB] focus:ring-0 mt-1 py-1 px-0 placeholder-[#82869A80]';
 	const labelStyle = 'text-[#82869A]';
@@ -25,7 +28,10 @@ const SignUp = () => {
 			</div>
 			<div className='p-8 flex-1'>
 				<form
-					onSubmit={(e) => e.preventDefault()}
+					onSubmit={(e) => {
+						e.preventDefault();
+						navigate('/');
+					}}
 					className='flex flex-col h-full'
 				>
 					<div>
