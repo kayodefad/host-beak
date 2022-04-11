@@ -10,18 +10,28 @@ import payrollIcon from './assets/images/payroll-icon.svg';
 import reportsIcon from './assets/images/reports-icon.svg';
 import analyticsIcon from './assets/images/analytics-icon.svg';
 import settingsIcon from './assets/images/settings-icon.svg';
+import Welcome from './views/pages/welcome';
+import Dashboard from './views/pages/dashboard';
+import Sales from './views/pages/sales';
+import Purchases from './views/pages/purchases';
+import Accounting from './views/pages/accounting';
+import Banking from './views/pages/banking';
+import Payroll from './views/pages/payroll';
+import Reports from './views/pages/reports';
+import Analytics from './views/pages/analytics';
+import Settings from './views/pages/settings';
 
 const _nav = [
 	{
-		component: NavLink,
+		component: Welcome,
 		name: 'Welcome',
-		path: '/welcome',
+		path: '/',
 		icon: (
 			<img className='w-[40%] h-[40%]' src={welcomeIcon} alt='welcome icon' />
 		),
 	},
 	{
-		component: NavLink,
+		component: Dashboard,
 		name: 'Dashboard',
 		path: '/dashboard',
 		icon: (
@@ -33,13 +43,13 @@ const _nav = [
 		),
 	},
 	{
-		component: NavLink,
+		component: Sales,
 		name: 'Sales',
 		path: '/sales',
 		icon: <img className='w-[40%] h-[40%]' src={salesIcon} alt='sales icon' />,
 	},
 	{
-		component: NavLink,
+		component: Purchases,
 		name: 'Purchases',
 		path: '/purchases',
 		icon: (
@@ -64,7 +74,7 @@ const _nav = [
 		],
 	},
 	{
-		component: NavLink,
+		component: Accounting,
 		name: 'Accounting',
 		path: '/accounting',
 		icon: (
@@ -83,7 +93,7 @@ const _nav = [
 		],
 	},
 	{
-		component: NavLink,
+		component: Banking,
 		name: 'Banking',
 		path: '/banking',
 		icon: (
@@ -98,7 +108,7 @@ const _nav = [
 		],
 	},
 	{
-		component: NavLink,
+		component: Payroll,
 		name: 'Payroll',
 		path: '/payroll',
 		icon: (
@@ -113,7 +123,7 @@ const _nav = [
 		],
 	},
 	{
-		component: NavLink,
+		component: Reports,
 		name: 'Reports',
 		path: '/reports',
 		icon: (
@@ -121,7 +131,7 @@ const _nav = [
 		),
 	},
 	{
-		component: NavLink,
+		component: Analytics,
 		name: 'Analytics',
 		path: '/analytics',
 		icon: (
@@ -175,7 +185,7 @@ const _nav = [
 		],
 	},
 	{
-		component: NavLink,
+		component: Settings,
 		name: 'Settings',
 		path: '/settings',
 		icon: (

@@ -1,14 +1,16 @@
+import { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
+
 import logoIcon from '../assets/images/logo.svg';
 import logoArrow from '../assets/images/logo-arrow.svg';
 import logoutIcon from '../assets/images/logout.svg';
 import acceptPaymentsIcon from '../assets/images/accept-payments-icon.svg';
-import _nav from '../_nav';
-import { NavLink } from 'react-router-dom';
 import rightArrow from '../assets/images/right-arrow.svg';
-import '../css/style.css';
-import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+
+import _nav from '../_nav';
 import Backdrop from './backdrop';
+import '../css/style.css';
 
 const AppSidebar = ({ showSidebar, setShowSidebar }) => {
 	const [showSubItems, setShowSubItems] = useState({});

@@ -53,7 +53,9 @@ const AddBillDetails = () => {
 					<input className={inputStyle} type='date' name='date' id='date' />
 				</div>
 				<div
-					className={outerDiv + ' lg:w-[85%] lg:row-start-2 lg:row-end-4 lg:col-start-3'}
+					className={
+						outerDiv + ' lg:w-[85%] lg:row-start-2 lg:row-end-4 lg:col-start-3'
+					}
 				>
 					<label className={labelStyle} htmlFor='notes'>
 						Notes

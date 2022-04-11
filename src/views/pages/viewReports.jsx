@@ -1,4 +1,4 @@
-import ReportItem from '../../components/report-item';
+import ReportItem from '../../components/reportItem';
 
 const ViewReports = () => {
 	return (
