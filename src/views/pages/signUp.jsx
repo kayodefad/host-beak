@@ -70,14 +70,14 @@ const SignUp = () => {
 							</div>
 						</div>
 						<div className='mt-8 md:mt-0'>
-							<label className={labelStyle} htmlFor='firstName'>
+							<label className={labelStyle} htmlFor='phone'>
 								Phone Number
 							</label>
 							<input
 								className={inputStyle}
 								type='text'
-								name='firstName'
-								id='firstName'
+								name='phone'
+								id='phone'
 								placeholder='Enter your phone number'
 							/>
 						</div>
@@ -114,7 +114,7 @@ const SignUp = () => {
 									name='vehicle1'
 									value='Bike'
 								/>
-								<label className='text-[#82869A99]' for='vehicle1'>
+								<label className='text-[#82869A99]' htmlFor='vehicle1'>
 									{' '}
 									Remember me
 								</label>

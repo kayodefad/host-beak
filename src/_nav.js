@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {lazy} from 'react';
 import { NavLink } from 'react-router-dom';
 import welcomeIcon from './assets/images/welcome-icon.svg';
 import dashboardIcon from './assets/images/dashboard-icon.svg';
@@ -10,16 +10,16 @@ import payrollIcon from './assets/images/payroll-icon.svg';
 import reportsIcon from './assets/images/reports-icon.svg';
 import analyticsIcon from './assets/images/analytics-icon.svg';
 import settingsIcon from './assets/images/settings-icon.svg';
-import Welcome from './views/pages/welcome';
-import Dashboard from './views/pages/dashboard';
-import Sales from './views/pages/sales';
-import Purchases from './views/pages/purchases';
-import Accounting from './views/pages/accounting';
-import Banking from './views/pages/banking';
-import Payroll from './views/pages/payroll';
-import Reports from './views/pages/reports';
-import Analytics from './views/pages/analytics';
-import Settings from './views/pages/settings';
+const Welcome = lazy(() => import('./views/pages/welcome'));
+const Dashboard = lazy(() => import('./views/pages/dashboard'));
+const Sales = lazy(() => import('./views/pages/sales'));
+const Purchases = lazy(() => import('./views/pages/purchases'));
+const Accounting = lazy(() => import('./views/pages/accounting'));
+const Banking = lazy(() => import('./views/pages/banking'));
+const Payroll = lazy(() => import('./views/pages/payroll'));
+const Reports = lazy(() => import('./views/pages/reports'));
+const Analytics = lazy(() => import('./views/pages/analytics'));
+const Settings = lazy(() => import('./views/pages/settings'));
 
 const _nav = [
 	{

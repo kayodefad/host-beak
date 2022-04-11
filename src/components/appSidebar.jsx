@@ -55,10 +55,9 @@ const AppSidebar = ({ showSidebar, setShowSidebar }) => {
 			<nav className='w-[70%] h-full mx-auto flex-[0.75] flex flex-col justify-between overflow-y-auto mb-8'>
 				{_nav.map((navItem, i) => {
 					return (
-						<div className='relative'>
+						<div key={i} className='relative'>
 							<div className='relative'>
 								<NavLink
-									key={i}
 									className={({ isActive }) =>
 										'nav-link' + (isActive ? ' activated' : '')
 									}

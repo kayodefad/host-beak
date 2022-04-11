@@ -11,6 +11,7 @@ const ViewReports = () => {
 						.map((item, i) => {
 							return (
 								<ReportItem
+									key={i}
 									badge={i === 0}
 									name={i % 2 === 0 ? 'February Report' : 'March Report'}
 								/>
